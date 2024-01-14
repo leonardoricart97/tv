@@ -1,31 +1,46 @@
-<layouttype>thumbnail</layouttype>
+<item>
+<title>[COLOR blue][B] SERVIDOR 1 [/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=LR IPTV&amp;maxbitrate={1062000}&amp;Buffer=20971520&amp;Keyframe=3[makelist.param1]&amp;url=$doregex[encodedurl]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>#EXTINF:.*,(.*?)\n.*(http.*m3u8)</expres>
+<page>https://cineboxonline2.blogspot.com/2024/01/servidor-1.html</page>
+<referer></referer>
+<x-forward></x-forward>
+<agent>Kodi/18.0</agent>
+</regex>
+<regex>
+<name>encodedurl</name>
+<expres>$pyFunction:urllib.quote_plus('[makelist.param2]')<expres>
+<page></page>
+</regex>
+</item>
 
 
-<channels>
-<channel>
-<name>[B][COLOR lime]●[/COLOR] [COLOR white] SERVIDOR 1 [/COLOR][/B]</name>
-<thumbnail>https://i.pinimg.com/originals/ad/d4/bf/add4bf2e461198e930a47438f500ca7a.png</thumbnail>
-<externallink>https://cineboxonline2.blogspot.com/2024/01/servidor-1.html</externallink>
-<fanart>https://i.ytimg.com/vi/T3dapQU_kSs/maxresdefault.jpg</fanart>
-<info></info>
-</channel>
-
-<channels>
-<channel>
-<name>[B][COLOR lime]●[/COLOR] [COLOR white] SERVIDOR 2 [/COLOR][/B]</name>
-<thumbnail>https://i.pinimg.com/originals/ad/d4/bf/add4bf2e461198e930a47438f500ca7a.png</thumbnail>
-<externallink>https://cineboxplay.blogspot.com/2023/12/servidor-2.html</externallink>
-<fanart>https://i.ytimg.com/vi/T3dapQU_kSs/maxresdefault.jpg</fanart>
-<info></info>
-</channel>
-
-<channels>
-<channel>
-<name>[B][COLOR lime]●[/COLOR] [COLOR white] FUTEBOL AO VIVO [/COLOR][/B]</name>
-<thumbnail>https://static.vecteezy.com/system/resources/thumbnails/011/887/107/small/soccer-ball-3d-render-png.png</thumbnail>
-<externallink>https://cineboxplay.blogspot.com/2023/12/futebol-aovivo.html</externallink>
-<fanart>https://guiadoboleiro.com.br/wp-content/uploads/2022/04/6-Aplicativos-para-assistir-futebol-ao-vivo.jpg</fanart>
-<info></info>
-</channel>
-
-</channels>
+<item>
+<title>[COLOR blue][B] SERVIDOR 2 [/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;name=LR IPTV&amp;maxbitrate={1062000}&amp;Buffer=20971520&amp;Keyframe=3[makelist.param1]&amp;url=$doregex[encodedurl]</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>#EXTINF:.*,(.*?)\n.*(http.*m3u8)</expres>
+<page>https://cineboxplay.blogspot.com/2023/12/servidor-4_20.html</page>
+<referer></referer>
+<x-forward></x-forward>
+<agent>Kodi/18.0</agent>
+</regex>
+<regex>
+<name>encodedurl</name>
+<expres>$pyFunction:urllib.quote_plus('[makelist.param2]')<expres>
+<page></page>
+</regex>
+</item>
